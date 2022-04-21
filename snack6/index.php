@@ -33,20 +33,12 @@
     <title>Php-Snack-6</title>
 </head>
 <body>
-    <?php
-    $dbValues = array_values($db);
-    $dbKeys = array_keys($db);
-    for ( $i = 0; $i < count ($dbKeys) ; $i++){;?>
-    <h4>Ruolo: <?php echo $dbKeys[$i]; ?></h4>
-    <?php for ($dbIndex = 0; $dbIndex < count($dbValues[$i]); $dbIndex++) { ?>
-<h5>
-<?php echo $dbValues[$i][$dbIndex]['name']; ?>
-</h5>
-<p>
-<?php echo $dbValues[$i][$dbIndex]['lastname']; ?>
-    </h5>
-<?php } ?>
-<?php } ?>
 
-</body>
+<div class="grey">
+    
+</div>
+<div class="green"></div>
+
+    </body>
 </html>
+

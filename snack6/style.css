@@ -1,0 +1,16 @@
+.grey {
+    width:350px;
+    height:250px;
+    background-color: lightgray;
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+}
+
+.green {
+    width:350px;
+    height:250px;
+    background-color: green;
+    border: 1px solid goldenrod;
+    color: white;
+    border-radius: 10px;
+}

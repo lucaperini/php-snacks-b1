@@ -10,14 +10,16 @@
 <body>
 <p>
     <?php 
-    $randomArray = [];
-    for ($i=0; $i < 15; $i++) {
-    $rndNumber = rand(0, 100);
-    if (!in_array($rndNumber, $randomArray)){
-    array_push($randomArray, $rndNumber );
-    }
-    };
-    var_dump($randomArray);
+        $randomArray = [];
+        $i= 1;
+        while ($i <= 15) {
+            $rndNumber = rand(0, 100);
+            if (!in_array($rndNumber, $randomArray)){
+            array_push($randomArray, $rndNumber );
+            $i++;
+            }
+        };
+        var_dump($randomArray);
     ?>
 </p>
 </body>

@@ -47,13 +47,26 @@ $posts = [
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Php-Snack-6</title>
 </head>
 <body>
     <?php
-    for ($i; $i < count($posts[$i]); $i++) {
-        echo $posts[$i] .'';
-    };
-    ?>
+    $dbValues = array_values($posts);
+    $dbKeys = array_keys($posts);
+    for ( $i = 0; $i < count ($dbKeys) ; $i++){;?>
+    <h4>Articoli del <?php echo $dbKeys[$i]; ?></h4>
+    <?php for ($dbIndex = 0; $dbIndex < count($dbValues[$i]); $dbIndex++) { ?>
+<h5>
+<?php echo $dbValues[$i][$dbIndex]['title']; ?>
+</h5>
+<p>
+<?php echo $dbValues[$i][$dbIndex]['author']; ?>
+</p>
+<p>
+<?php echo $dbValues[$i][$dbIndex]['text']; ?>
+</p>
+<?php } ?>
+<?php } ?>
+
 </body>
 </html>
