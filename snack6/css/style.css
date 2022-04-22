@@ -1,16 +1,19 @@
 .grey {
     width:350px;
-    height:250px;
+    padding: 3rem;
     background-color: lightgray;
     border: 1px solid goldenrod;
     border-radius: 10px;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .green {
     width:350px;
-    height:250px;
+    padding: 3rem;
     background-color: green;
     border: 1px solid goldenrod;
     color: white;
     border-radius: 10px;
+    text-align: center;
 }
